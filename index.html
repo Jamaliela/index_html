@@ -1,14 +1,40 @@
-<html>
+<!doctype html>
+<html lang="en">
   <head>
-    <title>NOT A FAKE FORM</title>
+    <title>Staff: New Salesperson</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Staff: New Salesperson">
+    <link rel="stylesheet" media="all" href="/red/public/styles.css">
   </head>
-  <body onload="document.my_form.submit()">
-    <form action="https://35.184.199.7/red/public/staff/salespeople/edit.php?id=5" method="POST" name="my_form" style="display: none;" target="hidden_results" >
-      <input type="text" name="first_name" value="Elaheh" />
-      <input type="text" name="last_name" value="Jamali" />
-      <input type="text" name="phone" value="989-098-7564" />
-      <input type="text" name="email" value="Elaheh@gmail.com" />
-    </form>
-    <iframe name="hidden_results" style="display: none;"></iframe>
+  <body>
+<div id="menu">
+  <ul>
+    <li><a href="/red/public/index.php">Public Site</a></li>
+    <li><a href="/red/public/staff/index.php">Staff Menu</a></li>
+    <li><a href="/red/public/staff/logout.php" style="color: red;">Log out</a></li>
+  </ul>
+</div>
+
+<div id="main-content">
+  <a href="index.php">Back to Salespeople List</a><br />
+
+  <h1>New Salesperson</h1>
+
+  
+  <form action="new.php" method="post">
+    <input type="hidden" name="csrf_token" value="e325679b64beecc2f512dea80e9e9820" />    First name:<br />
+    <input type="text" name="first_name" value="Elaheh" /><br />
+    Last name:<br />
+    <input type="text" name="last_name" value="Jamali" /><br />
+    Phone:<br />
+    <input type="text" name="phone" value="98980582727" /><br />
+    Email:<br />
+    <input type="text" name="email" value="ela@gmail.com" /><br />
+    <br />
+    <input type="submit" name="submit" value="Create"  />
+  </form>
+
+</div>
+
   </body>
 </html>
